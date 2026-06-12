@@ -28,13 +28,13 @@ function Testimoniales() {
 
   return (
     <section className="pb-[350px]">
-        <div className="container">
-            <div>
+        <div className="container relative ">
+            <div className="absolute left-[20px]  top-[-35px]  ">
                 <img src="/src/assets/images/bg-quotes.png" alt="quote" />
             </div>
-            <div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[40px] relative z-30">
                 {testData.map((item)=>{
-                    return <TestimonialeBox key={item.id} desc= {item.desc} image = {item.image} name={item.name} position={item.position} />
+                    return <TestimonialBox key={item.id} desc= {item.desc} image = {item.image} name={item.name} position={item.position} />
                 })}
             </div>
 

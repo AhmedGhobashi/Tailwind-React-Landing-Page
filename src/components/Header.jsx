@@ -34,7 +34,7 @@ function Header() {
     });
 
   return (
-    <header ref={headerRef}  className="pt-[60px] fixed top-0 left-0 w-[100%] z-500 transition-all duration-200 ">
+    <header ref={headerRef}  className="pt-[60px] fixed top-0 left-0 w-[100%] z-500 transition-all duration-200 z-[999] ">
         <div className="container px-[60px] flex justify-between items-center gap-[30px] sm:gap-[0] flex-col sm:flex-row">
             <a href="/">
                 <img src="/src/assets/images/logo.svg" alt="logo-svg" />
